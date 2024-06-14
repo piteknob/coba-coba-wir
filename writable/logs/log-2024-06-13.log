@@ -1,0 +1,535 @@
+CRITICAL - 2024-06-13 03:22:38 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: product/insert]
+in APPPATH\Controllers\Product.php on line 13.
+ 1 APPPATH\Controllers\Product.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\xampp\\htdocs\\project_e-commerce\\app\\Controllers\\Product.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 03:57:11 --> ParseError: syntax error, unexpected double-quoted string "kocak", expecting ":"
+[Method: GET, Route: test/pitek]
+in APPPATH\Controllers\Test.php on line 10.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('test/pitek', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('test/pitek')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('test/pitek')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 03:57:12 --> ParseError: syntax error, unexpected double-quoted string "kocak", expecting ":"
+[Method: GET, Route: test/pitek]
+in APPPATH\Controllers\Test.php on line 10.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('test/pitek', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('test/pitek')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('test/pitek')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-13 04:24:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''type', 'value'
+        WHERE category_id = '1' AND type_id = '1' AND value_...' at line 3 in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO pro...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO pro...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO pro...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Controllers\Product.php(25): CodeIgniter\Database\BaseConnection->query('INSERT INTO pro...')
+#4 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\Product->insert()
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-13 04:24:49 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''type', 'value'
+        WHERE category_id = '1' AND type_id = '1' AND value_...' at line 3
+[Method: POST, Route: product/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Product.php(25): CodeIgniter\Database\BaseConnection->query('INSERT INTO product (product_name, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'Kacang Hijau\', \'1\', category_name, \'1\', type_name, \'1\', value_value, NOW(), NULL, NULL
+        FROM category, \'type\', \'value\'
+        WHERE category_id = \'1\' AND type_id = \'1\' AND value_id = \'1\'
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 04:24:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''type', 'value'
+        WHERE category_id = '1' AND type_id = '1' AND value_...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO product (product_name, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'Kacang Hijau\', \'1\', category_name, \'1\', type_name, \'1\', value_value, NOW(), NULL, NULL
+        FROM category, \'type\', \'value\'
+        WHERE category_id = \'1\' AND type_id = \'1\' AND value_id = \'1\'
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO product (product_name, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'Kacang Hijau\', \'1\', category_name, \'1\', type_name, \'1\', value_value, NOW(), NULL, NULL
+        FROM category, \'type\', \'value\'
+        WHERE category_id = \'1\' AND type_id = \'1\' AND value_id = \'1\'
+        ')
+ 3 APPPATH\Controllers\Product.php(25): CodeIgniter\Database\BaseConnection->query('INSERT INTO product (product_name, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'Kacang Hijau\', \'1\', category_name, \'1\', type_name, \'1\', value_value, NOW(), NULL, NULL
+        FROM category, \'type\', \'value\'
+        WHERE category_id = \'1\' AND type_id = \'1\' AND value_id = \'1\'
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 04:24:49 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''type', 'value'
+        WHERE category_id = '1' AND type_id = '1' AND value_...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO product (product_name, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'Kacang Hijau\', \'1\', category_name, \'1\', type_name, \'1\', value_value, NOW(), NULL, NULL
+        FROM category, \'type\', \'value\'
+        WHERE category_id = \'1\' AND type_id = \'1\' AND value_id = \'1\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO product (product_name, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'Kacang Hijau\', \'1\', category_name, \'1\', type_name, \'1\', value_value, NOW(), NULL, NULL
+        FROM category, \'type\', \'value\'
+        WHERE category_id = \'1\' AND type_id = \'1\' AND value_id = \'1\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO product (product_name, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'Kacang Hijau\', \'1\', category_name, \'1\', type_name, \'1\', value_value, NOW(), NULL, NULL
+        FROM category, \'type\', \'value\'
+        WHERE category_id = \'1\' AND type_id = \'1\' AND value_id = \'1\'
+        ')
+ 4 APPPATH\Controllers\Product.php(25): CodeIgniter\Database\BaseConnection->query('INSERT INTO product (product_name, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'Kacang Hijau\', \'1\', category_name, \'1\', type_name, \'1\', value_value, NOW(), NULL, NULL
+        FROM category, \'type\', \'value\'
+        WHERE category_id = \'1\' AND type_id = \'1\' AND value_id = \'1\'
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 04:52:48 --> Error: Call to a member function getResultArray() on bool
+[Method: POST, Route: product/insert]
+in APPPATH\Controllers\Product.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 06:12:36 --> Error: Call to a member function getResultArray() on bool
+[Method: POST, Route: product/insert]
+in APPPATH\Controllers\Product.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-13 07:11:24 --> mysqli_sql_exception: Table 'griya_bakpia.product_type' doesn't exist in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('UPDATE product ...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product ...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product ...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Controllers\Product.php(82): CodeIgniter\Database\BaseConnection->query('UPDATE product ...')
+#4 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\Product->update()
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-13 07:11:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'griya_bakpia.product_type' doesn't exist
+[Method: POST, Route: product/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Product.php(82): CodeIgniter\Database\BaseConnection->query('UPDATE product 
+            SET product_name = \'daw\',
+            product_price = \'200\',
+            product_type_id = 1,
+            product_type_name = (SELECT type_id FROM product_type WHERE type_name = \'1\'),
+            product_category_id = 1,
+            product_category_name = (SELECT category_id FROM product_category WHERE category_name = \'1\'),
+            product_value_id = 1,
+            product_value_value = (SELECT value_id FROM product_value WHERE value_value = \'1\'),
+            product_updated_at = NOW()
+        WHERE product_id = 1
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:11:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'griya_bakpia.product_type' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product 
+            SET product_name = \'daw\',
+            product_price = \'200\',
+            product_type_id = 1,
+            product_type_name = (SELECT type_id FROM product_type WHERE type_name = \'1\'),
+            product_category_id = 1,
+            product_category_name = (SELECT category_id FROM product_category WHERE category_name = \'1\'),
+            product_value_id = 1,
+            product_value_value = (SELECT value_id FROM product_value WHERE value_value = \'1\'),
+            product_updated_at = NOW()
+        WHERE product_id = 1
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product 
+            SET product_name = \'daw\',
+            product_price = \'200\',
+            product_type_id = 1,
+            product_type_name = (SELECT type_id FROM product_type WHERE type_name = \'1\'),
+            product_category_id = 1,
+            product_category_name = (SELECT category_id FROM product_category WHERE category_name = \'1\'),
+            product_value_id = 1,
+            product_value_value = (SELECT value_id FROM product_value WHERE value_value = \'1\'),
+            product_updated_at = NOW()
+        WHERE product_id = 1
+        ')
+ 3 APPPATH\Controllers\Product.php(82): CodeIgniter\Database\BaseConnection->query('UPDATE product 
+            SET product_name = \'daw\',
+            product_price = \'200\',
+            product_type_id = 1,
+            product_type_name = (SELECT type_id FROM product_type WHERE type_name = \'1\'),
+            product_category_id = 1,
+            product_category_name = (SELECT category_id FROM product_category WHERE category_name = \'1\'),
+            product_value_id = 1,
+            product_value_value = (SELECT value_id FROM product_value WHERE value_value = \'1\'),
+            product_updated_at = NOW()
+        WHERE product_id = 1
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->update()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:11:24 --> [Caused by] mysqli_sql_exception: Table 'griya_bakpia.product_type' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('UPDATE product 
+            SET product_name = \'daw\',
+            product_price = \'200\',
+            product_type_id = 1,
+            product_type_name = (SELECT type_id FROM product_type WHERE type_name = \'1\'),
+            product_category_id = 1,
+            product_category_name = (SELECT category_id FROM product_category WHERE category_name = \'1\'),
+            product_value_id = 1,
+            product_value_value = (SELECT value_id FROM product_value WHERE value_value = \'1\'),
+            product_updated_at = NOW()
+        WHERE product_id = 1
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product 
+            SET product_name = \'daw\',
+            product_price = \'200\',
+            product_type_id = 1,
+            product_type_name = (SELECT type_id FROM product_type WHERE type_name = \'1\'),
+            product_category_id = 1,
+            product_category_name = (SELECT category_id FROM product_category WHERE category_name = \'1\'),
+            product_value_id = 1,
+            product_value_value = (SELECT value_id FROM product_value WHERE value_value = \'1\'),
+            product_updated_at = NOW()
+        WHERE product_id = 1
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product 
+            SET product_name = \'daw\',
+            product_price = \'200\',
+            product_type_id = 1,
+            product_type_name = (SELECT type_id FROM product_type WHERE type_name = \'1\'),
+            product_category_id = 1,
+            product_category_name = (SELECT category_id FROM product_category WHERE category_name = \'1\'),
+            product_value_id = 1,
+            product_value_value = (SELECT value_id FROM product_value WHERE value_value = \'1\'),
+            product_updated_at = NOW()
+        WHERE product_id = 1
+        ')
+ 4 APPPATH\Controllers\Product.php(82): CodeIgniter\Database\BaseConnection->query('UPDATE product 
+            SET product_name = \'daw\',
+            product_price = \'200\',
+            product_type_id = 1,
+            product_type_name = (SELECT type_id FROM product_type WHERE type_name = \'1\'),
+            product_category_id = 1,
+            product_category_name = (SELECT category_id FROM product_category WHERE category_name = \'1\'),
+            product_value_id = 1,
+            product_value_value = (SELECT value_id FROM product_value WHERE value_value = \'1\'),
+            product_updated_at = NOW()
+        WHERE product_id = 1
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->update()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-13 07:29:30 --> mysqli_sql_exception: Unknown column 'product_deleted_at' in 'field list' in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO pro...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO pro...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO pro...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Controllers\Product.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO pro...')
+#4 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\Product->insert()
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-13 07:29:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_deleted_at' in 'field list'
+[Method: POST, Route: product/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Product.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO product (product_name, product_price, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'test\', 24000, \'2\', category_name, \'3\', type_name, \'2\', value_value, NOW(), NULL, NULL
+        FROM category, `type`, `value`
+        WHERE category_id = \'2\' AND type_id = \'3\' AND value_id = \'2\'
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:29:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_deleted_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO product (product_name, product_price, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'test\', 24000, \'2\', category_name, \'3\', type_name, \'2\', value_value, NOW(), NULL, NULL
+        FROM category, `type`, `value`
+        WHERE category_id = \'2\' AND type_id = \'3\' AND value_id = \'2\'
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO product (product_name, product_price, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'test\', 24000, \'2\', category_name, \'3\', type_name, \'2\', value_value, NOW(), NULL, NULL
+        FROM category, `type`, `value`
+        WHERE category_id = \'2\' AND type_id = \'3\' AND value_id = \'2\'
+        ')
+ 3 APPPATH\Controllers\Product.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO product (product_name, product_price, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'test\', 24000, \'2\', category_name, \'3\', type_name, \'2\', value_value, NOW(), NULL, NULL
+        FROM category, `type`, `value`
+        WHERE category_id = \'2\' AND type_id = \'3\' AND value_id = \'2\'
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:29:30 --> [Caused by] mysqli_sql_exception: Unknown column 'product_deleted_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO product (product_name, product_price, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'test\', 24000, \'2\', category_name, \'3\', type_name, \'2\', value_value, NOW(), NULL, NULL
+        FROM category, `type`, `value`
+        WHERE category_id = \'2\' AND type_id = \'3\' AND value_id = \'2\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO product (product_name, product_price, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'test\', 24000, \'2\', category_name, \'3\', type_name, \'2\', value_value, NOW(), NULL, NULL
+        FROM category, `type`, `value`
+        WHERE category_id = \'2\' AND type_id = \'3\' AND value_id = \'2\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO product (product_name, product_price, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'test\', 24000, \'2\', category_name, \'3\', type_name, \'2\', value_value, NOW(), NULL, NULL
+        FROM category, `type`, `value`
+        WHERE category_id = \'2\' AND type_id = \'3\' AND value_id = \'2\'
+        ')
+ 4 APPPATH\Controllers\Product.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO product (product_name, product_price, product_category_id, product_category_name, product_type_id, product_type_name, product_value_id, product_value_value, product_created_at, product_updated_at, product_deleted_at)
+        SELECT \'test\', 24000, \'2\', category_name, \'3\', type_name, \'2\', value_value, NOW(), NULL, NULL
+        FROM category, `type`, `value`
+        WHERE category_id = \'2\' AND type_id = \'3\' AND value_id = \'2\'
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Product->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-13 07:54:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2 in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO `ty...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ty...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ty...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ty...')
+#4 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\Type->insert()
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-13 07:54:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+[Method: POST, Route: type/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:54:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 3 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:54:29 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 4 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-13 07:54:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2 in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO `ty...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ty...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ty...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ty...')
+#4 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\Type->insert()
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-13 07:54:30 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+[Method: POST, Route: type/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:54:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 3 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:54:30 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 4 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-13 07:54:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2 in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO `ty...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ty...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ty...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ty...')
+#4 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\Type->insert()
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-13 07:54:39 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+[Method: POST, Route: type/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:54:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 3 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-13 07:54:39 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 2
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 4 APPPATH\Controllers\Type.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO `type`(type_name, type_created_at, type_updated_at, type_deleted_at)
+        VALUES (\'test\', NOW(), NULL, NULL')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Type->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Type))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')

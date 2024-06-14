@@ -1,0 +1,400 @@
+ERROR - 2024-06-14 03:20:32 --> mysqli_sql_exception: Unknown column 'auth_user_password' in 'field list' in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO aut...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO aut...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO aut...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Controllers\User.php(105): CodeIgniter\Database\BaseConnection->query('INSERT INTO aut...')
+#4 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\User->login()
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-14 03:20:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auth_user_password' in 'field list'
+[Method: POST, Route: user/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\User.php(105): CodeIgniter\Database\BaseConnection->query('INSERT INTO auth_user (auth_user_user_id, auth_user_username, auth_user_password, auth_user_token, auth_user_date_login, auth_user_date_expired) 
+                    SELECT user_id, \'admin1\', \'123456\', \'YWRtaW4xMTIzNDU2\', NOW(), \'2024-06-14 04:20:26\'
+                    FROM user
+                    WHERE user_username = \'admin1\'')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 03:20:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'auth_user_password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO auth_user (auth_user_user_id, auth_user_username, auth_user_password, auth_user_token, auth_user_date_login, auth_user_date_expired) 
+                    SELECT user_id, \'admin1\', \'123456\', \'YWRtaW4xMTIzNDU2\', NOW(), \'2024-06-14 04:20:26\'
+                    FROM user
+                    WHERE user_username = \'admin1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO auth_user (auth_user_user_id, auth_user_username, auth_user_password, auth_user_token, auth_user_date_login, auth_user_date_expired) 
+                    SELECT user_id, \'admin1\', \'123456\', \'YWRtaW4xMTIzNDU2\', NOW(), \'2024-06-14 04:20:26\'
+                    FROM user
+                    WHERE user_username = \'admin1\'')
+ 3 APPPATH\Controllers\User.php(105): CodeIgniter\Database\BaseConnection->query('INSERT INTO auth_user (auth_user_user_id, auth_user_username, auth_user_password, auth_user_token, auth_user_date_login, auth_user_date_expired) 
+                    SELECT user_id, \'admin1\', \'123456\', \'YWRtaW4xMTIzNDU2\', NOW(), \'2024-06-14 04:20:26\'
+                    FROM user
+                    WHERE user_username = \'admin1\'')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 03:20:32 --> [Caused by] mysqli_sql_exception: Unknown column 'auth_user_password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('INSERT INTO auth_user (auth_user_user_id, auth_user_username, auth_user_password, auth_user_token, auth_user_date_login, auth_user_date_expired) 
+                    SELECT user_id, \'admin1\', \'123456\', \'YWRtaW4xMTIzNDU2\', NOW(), \'2024-06-14 04:20:26\'
+                    FROM user
+                    WHERE user_username = \'admin1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO auth_user (auth_user_user_id, auth_user_username, auth_user_password, auth_user_token, auth_user_date_login, auth_user_date_expired) 
+                    SELECT user_id, \'admin1\', \'123456\', \'YWRtaW4xMTIzNDU2\', NOW(), \'2024-06-14 04:20:26\'
+                    FROM user
+                    WHERE user_username = \'admin1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO auth_user (auth_user_user_id, auth_user_username, auth_user_password, auth_user_token, auth_user_date_login, auth_user_date_expired) 
+                    SELECT user_id, \'admin1\', \'123456\', \'YWRtaW4xMTIzNDU2\', NOW(), \'2024-06-14 04:20:26\'
+                    FROM user
+                    WHERE user_username = \'admin1\'')
+ 4 APPPATH\Controllers\User.php(105): CodeIgniter\Database\BaseConnection->query('INSERT INTO auth_user (auth_user_user_id, auth_user_username, auth_user_password, auth_user_token, auth_user_date_login, auth_user_date_expired) 
+                    SELECT user_id, \'admin1\', \'123456\', \'YWRtaW4xMTIzNDU2\', NOW(), \'2024-06-14 04:20:26\'
+                    FROM user
+                    WHERE user_username = \'admin1\'')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 03:36:29 --> ErrorException: Array to string conversion
+[Method: POST, Route: user/update]
+in APPPATH\Controllers\User.php on line 132.
+ 1 APPPATH\Controllers\User.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\project_e-commerce\\app\\Controllers\\User.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 03:36:51 --> ErrorException: Array to string conversion
+[Method: POST, Route: user/update]
+in APPPATH\Controllers\User.php on line 132.
+ 1 APPPATH\Controllers\User.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\project_e-commerce\\app\\Controllers\\User.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 03:37:34 --> ErrorException: Array to string conversion
+[Method: POST, Route: user/update]
+in APPPATH\Controllers\User.php on line 145.
+ 1 APPPATH\Controllers\User.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\project_e-commerce\\app\\Controllers\\User.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 03:38:21 --> ErrorException: Array to string conversion
+[Method: POST, Route: user/update]
+in APPPATH\Controllers\User.php on line 145.
+ 1 APPPATH\Controllers\User.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\project_e-commerce\\app\\Controllers\\User.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-14 06:15:37 --> mysqli_sql_exception: Unknown column 'value_name' in 'field list' in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id...')
+#4 C:\xampp\htdocs\project_e-commerce\app\Controllers\ListPublic.php(141): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+#7 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-14 06:15:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+[Method: GET, Route: listpublic/value]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:37 --> [Caused by] mysqli_sql_exception: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 5 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-14 06:15:44 --> mysqli_sql_exception: Unknown column 'value_name' in 'field list' in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id...')
+#4 C:\xampp\htdocs\project_e-commerce\app\Controllers\ListPublic.php(141): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+#7 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-14 06:15:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+[Method: GET, Route: listpublic/value]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:44 --> [Caused by] mysqli_sql_exception: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 5 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-14 06:15:48 --> mysqli_sql_exception: Unknown column 'value_name' in 'field list' in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id...')
+#4 C:\xampp\htdocs\project_e-commerce\app\Controllers\ListPublic.php(141): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+#7 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-14 06:15:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+[Method: GET, Route: listpublic/value]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:48 --> [Caused by] mysqli_sql_exception: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 5 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-14 06:15:49 --> mysqli_sql_exception: Unknown column 'value_name' in 'field list' in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id...')
+#4 C:\xampp\htdocs\project_e-commerce\app\Controllers\ListPublic.php(141): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+#7 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-14 06:15:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+[Method: GET, Route: listpublic/value]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:49 --> [Caused by] mysqli_sql_exception: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 5 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-14 06:15:49 --> mysqli_sql_exception: Unknown column 'value_name' in 'field list' in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id...')
+#4 C:\xampp\htdocs\project_e-commerce\app\Controllers\ListPublic.php(141): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+#7 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-14 06:15:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+[Method: GET, Route: listpublic/value]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:15:49 --> [Caused by] mysqli_sql_exception: Unknown column 'value_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 4 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT value_id AS id, value_name AS value, value_created_at AS created_at, value_updated_at AS updated_at FROM value WHERE value_deleted_at is null')
+ 5 APPPATH\Controllers\ListPublic.php(141): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->value()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-14 06:37:58 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: category/insert]
+in APPPATH\Controllers\Core\AuthController.php on line 27.
+ 1 APPPATH\Controllers\Core\AuthController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\xampp\\htdocs\\project_e-commerce\\app\\Controllers\\Core\\AuthController.php', 27)
+ 2 APPPATH\Controllers\Category.php(14): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Category->insert()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
