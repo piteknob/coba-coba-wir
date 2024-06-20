@@ -156,7 +156,6 @@ if (!function_exists('generateListData')) {
         if (!empty($orderByQuery)) {
             $sql .= orderBy($orderByQuery);
         }
-    
 
         // Set Pagination from Params 
 

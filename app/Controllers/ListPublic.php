@@ -2,13 +2,20 @@
 
 namespace App\Controllers;
 
-use App\Controllers\Core\DataController;
+use App\Controllers\Core\AuthController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class ListPublic extends DataController
+class ListPublic extends AuthController
 {
     public function admin()
     {
+
+        // Authorization Token
+        $token = $this->before(getallheaders());
+        if (!empty($token)) {
+            return $token;
+        }
+
         $query['data'] = ['user'];
         $query['select'] = [
             'user.user_id' => 'user_id',
@@ -16,7 +23,7 @@ class ListPublic extends DataController
             'user.user_password' => 'password',
             'auth_user.auth_user_token' => 'token',
             'auth_user.auth_user_date_login' => 'date_login',
-            'auth_user.auth_user_date_expired' => 'date_expired',  
+            'auth_user.auth_user_date_expired' => 'date_expired',
         ];
         $query['left_join'] = [
             'auth_user' => 'user.user_id = auth_user.auth_user_id',
@@ -24,7 +31,7 @@ class ListPublic extends DataController
         $query['pagination'] = [
             'pagination' => true
         ];
-        
+
         $data = generateListData($this->request->getVar(), $query, $this->db);
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'List Data Admin', $data);
@@ -46,9 +53,19 @@ class ListPublic extends DataController
         $query['pagination'] = [
             'pagination' => true
         ];
-        
 
-        $data = generateListData($this->request->getGet(), $query, $this->db);
+        $query['search_data'] = [
+            'product_category_name',
+            'product_name',
+        ];
+
+        $query['filter'] = [
+            "product_category_name",
+            "product_value_value",
+        ];
+
+
+        $data = generateListData($this->request->getVar(), $query, $this->db);
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'List Data Product', $data);
     }
@@ -69,7 +86,6 @@ class ListPublic extends DataController
         $data = generateListData($this->request->getGet(), $query, $this->db);
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'List Data Category', $data);
-                
     }
 
     public function DeletedCategory()

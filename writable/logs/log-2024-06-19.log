@@ -1,0 +1,98 @@
+ERROR - 2024-06-19 03:47:31 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'griya_bakpia', 3306, '', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\project_e-commerce\app\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\project_e-commerce\app\Controllers\ListPublic.php(65): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\ListPublic->product()
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+#7 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\project_e-commerce\app\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Controllers\ListPublic.php(65): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\ListPublic->product()
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-19 03:47:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: listpublic/product]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (product_category_name LIKE \'%%\' OR product_name LIKE \'%%\') OR product_price BETWEEN \'\' AND \'\'')
+ 3 APPPATH\Controllers\ListPublic.php(65): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->product()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+ERROR - 2024-06-19 03:52:41 --> mysqli_sql_exception: Unknown column 'category' in 'where clause' in C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\project_e-commerce\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\project_e-commerce\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\project_e-commerce\app\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\project_e-commerce\app\Controllers\ListPublic.php(65): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(933): App\Controllers\ListPublic->product()
+#6 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+#7 C:\xampp\htdocs\project_e-commerce\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\project_e-commerce\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\project_e-commerce\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\project_e-commerce\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\project_e-commerce\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-19 03:52:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category' in 'where clause'
+[Method: GET, Route: listpublic/product]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (category LIKE \'%hijau%\' OR product LIKE \'%hijau%\') AND product_price BETWEEN \'\' AND \'\'')
+ 2 APPPATH\Controllers\ListPublic.php(65): generateListData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->product()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-19 03:52:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'category' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (category LIKE \'%hijau%\' OR product LIKE \'%hijau%\') AND product_price BETWEEN \'\' AND \'\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (category LIKE \'%hijau%\' OR product LIKE \'%hijau%\') AND product_price BETWEEN \'\' AND \'\'')
+ 3 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (category LIKE \'%hijau%\' OR product LIKE \'%hijau%\') AND product_price BETWEEN \'\' AND \'\'')
+ 4 APPPATH\Controllers\ListPublic.php(65): generateListData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->product()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')
+CRITICAL - 2024-06-19 03:52:41 --> [Caused by] mysqli_sql_exception: Unknown column 'category' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (category LIKE \'%hijau%\' OR product LIKE \'%hijau%\') AND product_price BETWEEN \'\' AND \'\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (category LIKE \'%hijau%\' OR product LIKE \'%hijau%\') AND product_price BETWEEN \'\' AND \'\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (category LIKE \'%hijau%\' OR product LIKE \'%hijau%\') AND product_price BETWEEN \'\' AND \'\'')
+ 4 APPPATH\Helpers\query_helper.php(171): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS product, product_price AS price, product_type_name AS type, product_category_name AS category, product_value_value AS value, product_created_at AS created_at, product_updated_at AS updated_at FROM product WHERE (category LIKE \'%hijau%\' OR product LIKE \'%hijau%\') AND product_price BETWEEN \'\' AND \'\'')
+ 5 APPPATH\Controllers\ListPublic.php(65): generateListData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ListPublic->product()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ListPublic))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\project_e-commerce\\public\\index.php')

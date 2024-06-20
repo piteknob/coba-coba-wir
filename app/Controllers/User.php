@@ -159,15 +159,15 @@ class User extends AuthController
 
         $this->db->query($sql);
 
-        $token = $username;
-        $token .= $password;
+        $auth = $username;
+        $auth .= $password;
 
-        $token = base64_encode($token);
+        $auth = base64_encode($auth);
 
         $authSql = "UPDATE auth_user 
             SET auth_user_username = '{$username}',
-                auth_user_token = {$token} 
-        ";
+                auth_user_token = '{$auth}' 
+        WHERE auth_user_user_id = {$id}";
 
         $this->db->query($authSql);
 
