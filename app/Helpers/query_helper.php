@@ -79,6 +79,7 @@ if (!function_exists('generateListData')) {
         $filter = isset($params['filter']) ? $params['filter'] : '';
         $start = isset($params['start']) ? $params['start'] : '';
         $end = isset($params['end']) ? $params['end'] : '';
+        $paginationParams = isset($params['pagination']) ? $params['pagination'] : '';
 
 
         $data = (object) [];
@@ -124,8 +125,10 @@ if (!function_exists('generateListData')) {
         }
 
         if (!empty($searchQuery)) {
-            $sql .= searchData($searchQuery, $search, $where);
-            $where = true;
+            if (!empty($search)) {
+                $sql .= searchData($searchQuery, $search, $where);
+                $where = true;
+            }
         } else {
             if (empty($where)) {
                 $where = false;
@@ -133,7 +136,6 @@ if (!function_exists('generateListData')) {
                 $where = true;
             }
         }
-
         if (!empty($filterQuery)) {
             $sql .= filterData($filter, $filterQuery, $where, $filter);
             $where = true;
@@ -144,10 +146,13 @@ if (!function_exists('generateListData')) {
                 $where = true;
             }
         }
-
         if (!empty($filterBetweenQuery)) {
-            $sql .= filterBetween($filterBetweenQuery, $start, $end, $where, $search, $filter);
+            if (!empty($start) or !empty($end)) {
+                $sql .= filterBetween($filterBetweenQuery, $start, $end, $where, $search, $filter);
+            }
         }
+
+
 
         if (!empty($groupByQuery)) {
             $sql .= groupBy($groupByQuery);
@@ -157,10 +162,66 @@ if (!function_exists('generateListData')) {
             $sql .= orderBy($orderByQuery);
         }
 
-        // Set Pagination from Params 
+        // print_r($sql);
+        // die;
+        // Set Pagination from Params
+
+        if ($paginationParams == 'false') {
+            return $db->query($sql)->getResultArray();
+        }
+        if ($paginationParams == 'true') {
+            $pagination = true;
+
+            if (!empty($paginationResult)) {
+                $pagination = paginationValue($paginationResult);
+            }
+
+            if (!empty($pagination)) {
+
+                $countQuery = $sql;
+                $countResult = $db->query($countQuery)->getResultArray();
+                $countData = count($countResult);
+
+                $limit = isset($query['limit']['limit']) ? $query['limit']['limit'] : 5;
+                $offset = ($paginationPage - 1) * $limit;
+
+                $sql .= " LIMIT {$offset}, {$limit}";
+
+                $result = $db->query($sql)->getResultArray();
+                $jumlahPage = ceil($countData / $limit);
+                $pageSebelumnya = ($paginationPage - 1 > 0) ? ($paginationPage - 1) : null;
+                $pageSelanjutnya = ($paginationPage + 1 <= $jumlahPage) ? ($paginationPage + 1) : null;
+
+
+                $detailPage = detailPage($jumlahPage, $paginationPage, $countData, $limit);
+
+                foreach ($detailPage as $key => $value) {
+                    $pageStartEnd[] = $value;
+                }
+
+                $detailPage = range($pageStartEnd[0], $pageStartEnd[1]);
+
+                // Data
+                $data->data = $result;
+                $data->pagination = [
+                    'jumlah_data' => $countData,
+                    'jumlah_page' => $jumlahPage,
+                    'prev' => $pageSebelumnya,
+                    'page' => $paginationPage,
+                    'next' => $pageSelanjutnya,
+                    'detail' => $detailPage,
+                    'start' => $pageStartEnd[2],
+                    'end' => $pageStartEnd[3],
+                ];
+                return $data;
+            }
+        }
+
+
+        // Set Pagination from Controller 
 
         $pagination = true;
-        if (!empty($paginationResult)) {
+        if (!empty($paginationResult) && empty($paginationParams)) {
             $pagination = paginationValue($paginationResult);
         }
 
@@ -180,14 +241,35 @@ if (!function_exists('generateListData')) {
             $pageSebelumnya = ($paginationPage - 1 > 0) ? ($paginationPage - 1) : null;
             $pageSelanjutnya = ($paginationPage + 1 <= $jumlahPage) ? ($paginationPage + 1) : null;
 
+
+            $detailPage = detailPage($jumlahPage, $paginationPage, $countData, $limit);
+
+
+            foreach ($detailPage as $key => $value) {
+                $pageStartEnd[] = $value;
+            }
+
+
+            $detailPage = range($pageStartEnd[0], $pageStartEnd[1]);
+            $dataDetail = [];
+
+            foreach ($detailPage as $key => $value) {
+                $dataDetail = $value;
+            }
+
+
+
             // Data
             $data->data = $result;
             $data->pagination = [
                 'jumlah_data' => $countData,
                 'jumlah_page' => $jumlahPage,
+                'prev' => $pageSebelumnya,
                 'page' => $paginationPage,
-                'page_sebelumnya' => $pageSebelumnya,
-                'page_selanjutnya' => $pageSelanjutnya
+                'next' => $pageSelanjutnya,
+                'detail' => $detailPage,
+                'start' => $pageStartEnd[2],
+                'end' => $pageStartEnd[3],
             ];
             return $data;
         }
@@ -328,24 +410,50 @@ if (!function_exists('filterBetween')) {
             return $sql;
         } else {
             if (!empty($search)) {
-                foreach ($data as $key => $value) {
-                    $sql = " AND {$value} BETWEEN '{$start}' AND '{$end}' AND ";
-                }
-                $sql = rtrim($sql, ' AND ');
-                return $sql;
-            } else {
-                if (!empty($filter)) {
+                if (!empty($start) && ($end)) {
                     foreach ($data as $key => $value) {
                         $sql = " AND {$value} BETWEEN '{$start}' AND '{$end}' AND ";
                     }
                     $sql = rtrim($sql, ' AND ');
                     return $sql;
-                } else {
+                }
+                if (!empty($start)) {
                     foreach ($data as $key => $value) {
-                        $sql = " OR {$value} BETWEEN '{$start}' AND '{$end}' AND ";
+                        $sql = " AND {$value} BETWEEN '{$start}' AND '9999999999999999999' AND ";
                     }
                     $sql = rtrim($sql, ' AND ');
                     return $sql;
+                }
+                if (!empty($end)) {
+                    foreach ($data as $key => $value) {
+                        $sql = " AND {$value} BETWEEN '{$start}' AND '{$end}' AND ";
+                    }
+                    $sql = rtrim($sql, ' AND ');
+                    return $sql;
+                }
+            } else {
+                if (!empty($filter)) {
+                    if (!empty($start) && ($end)) {
+                        foreach ($data as $key => $value) {
+                            $sql = " AND {$value} BETWEEN '{$start}' AND '{$end}' AND ";
+                        }
+                        $sql = rtrim($sql, ' AND ');
+                        return $sql;
+                    }
+                    if (!empty($start)) {
+                        foreach ($data as $key => $value) {
+                            $sql = " AND {$value} BETWEEN '{$start}' AND '9999999999999999999' AND ";
+                        }
+                        $sql = rtrim($sql, ' AND ');
+                        return $sql;
+                    }
+                    if (!empty($end)) {
+                        foreach ($data as $key => $value) {
+                            $sql = " AND {$value} BETWEEN '{$start}' AND '{$end}' AND ";
+                        }
+                        $sql = rtrim($sql, ' AND ');
+                        return $sql;
+                    }
                 }
             }
         }
@@ -427,6 +535,49 @@ if (!function_exists('paginationValue')) {
     }
 }
 
+
+// Generate pagination detail
+if (!function_exists('detailPage')) {
+    function detailPage($page, $paginationPage, $data, $limit)
+    {
+        $request = 2;
+        $jumlahLink = $request;
+        if ($paginationPage > $jumlahLink) {
+            $start_page = $paginationPage - $jumlahLink;
+        } else {
+            $start_page = 1;
+        }
+
+        if ($paginationPage < ($page - $request)) {
+            $end_page = $paginationPage + $request;
+        } else {
+            $end_page = $page;
+        }
+
+
+        $array = range(1,$data);
+
+        $pageSize = $limit;
+
+        $pageNumber = $paginationPage;
+
+        $startIndex = ($pageNumber - 1) * $pageSize;
+        $endIndex = min($startIndex + $pageSize, count($array)) - 1;
+
+        $pageData = array_slice($array, $startIndex, $pageSize);
+
+        $startIndex = $startIndex + 1;
+        $endIndex = $endIndex + 1;
+        $data = [
+            'start_page' => $start_page,
+            'end_page' => $end_page,
+            'start_index' => $startIndex,
+            'end_index' => $endIndex,
+        ];
+
+        return $data;
+    }
+}
 
 // Generate query group by
 if (!function_exists('groupBy')) {
