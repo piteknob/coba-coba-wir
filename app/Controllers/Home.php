@@ -10,4 +10,6 @@ class Home extends DataController
     {
         return view('welcome_message');
     }
+
+    
 }

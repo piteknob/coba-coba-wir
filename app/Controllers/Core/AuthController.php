@@ -10,13 +10,12 @@ use Config\Services;
 use App\Controllers\Core\DataController;
 
 
-class AuthController extends DataController 
+class AuthController extends DataController
 {
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
-
     }
 
     public function before($request)
