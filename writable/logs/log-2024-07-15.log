@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 CRITICAL - 2024-07-15 07:40:26 --> ErrorException: Undefined array key "Token"
 [Method: GET, Route: admin/product/detail]
 in APPPATH\Controllers\Core\AuthController.php on line 26.
  1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+=======
+CRITICAL - 2024-07-15 04:19:24 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/product/detail]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\xampp\\htdocs\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+>>>>>>> 53d3be09a120a3d762591ddd6e901c780e799a3b
  2 APPPATH\Controllers\Admin\Product.php(13): App\Controllers\Core\AuthController->before([...])
  3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->detail()
  4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
@@ -9,10 +16,18 @@ in APPPATH\Controllers\Core\AuthController.php on line 26.
  6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+<<<<<<< HEAD
 CRITICAL - 2024-07-15 07:53:47 --> ErrorException: Undefined array key "Token"
 [Method: GET, Route: admin/product/detail]
 in APPPATH\Controllers\Core\AuthController.php on line 26.
  1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+=======
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\coba-coba-wir\\public\\index.php')
+CRITICAL - 2024-07-15 04:19:25 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/product/detail]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\xampp\\htdocs\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+>>>>>>> 53d3be09a120a3d762591ddd6e901c780e799a3b
  2 APPPATH\Controllers\Admin\Product.php(13): App\Controllers\Core\AuthController->before([...])
  3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->detail()
  4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
@@ -20,3 +35,7 @@ in APPPATH\Controllers\Core\AuthController.php on line 26.
  6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+<<<<<<< HEAD
+=======
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\coba-coba-wir\\public\\index.php')
+>>>>>>> 53d3be09a120a3d762591ddd6e901c780e799a3b

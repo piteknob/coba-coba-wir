@@ -13,7 +13,7 @@ class Login extends AuthController
     {
         $post = $this->request->getPost();
         $db = db_connect();
-
+        
         $rules = [
             'username' => 'required',
             'password' => 'required',

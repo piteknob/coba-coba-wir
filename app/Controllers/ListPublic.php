@@ -11,12 +11,17 @@ class ListPublic extends AuthController
     {
         $query['data'] = ['product'];
         $query['select'] = [
-            'product_id' => 'id',
             'product_name' => 'product',
             'product_value_value' => 'value',
             'product_type_name' => 'type',
             'product_category_name' => 'category',
             'product_price' => 'price',
+<<<<<<< HEAD
+=======
+        ];
+        $query['pagination'] = [
+            'pagination' => true
+>>>>>>> 53d3be09a120a3d762591ddd6e901c780e799a3b
         ];
 
         $query['search_data'] = [
@@ -39,7 +44,6 @@ class ListPublic extends AuthController
     {
         $query['data'] = ['category'];
         $query['select'] = [
-            'category_id' => 'id',
             'category_name' => 'category',
         ];
         $query['where_detail'] = [
@@ -55,7 +59,6 @@ class ListPublic extends AuthController
     {
         $query['data'] = ['type'];
         $query['select'] = [
-            'type_id' => 'id',
             'type_name' => 'type',
         ];
         $query['where_detail'] = [
@@ -71,7 +74,6 @@ class ListPublic extends AuthController
     {
         $query['data'] = ['value'];
         $query['select'] = [
-            'value_id' => 'id',
             'value_value' => 'value',
         ];
         $query['where_detail'] = [

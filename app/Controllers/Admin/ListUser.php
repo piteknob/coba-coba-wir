@@ -9,7 +9,11 @@ class ListUser extends AuthController
 {
     protected $db;
 
+<<<<<<< HEAD
     public function list_admin_get()
+=======
+    public function list_admin()
+>>>>>>> 53d3be09a120a3d762591ddd6e901c780e799a3b
     {
         // Authorization Token
         $token = $this->before(getallheaders());
