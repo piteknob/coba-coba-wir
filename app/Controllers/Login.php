@@ -35,7 +35,7 @@ class Login extends AuthController
         if (!$user) {
             return $this->responseFail(ResponseInterface::HTTP_NOT_FOUND, 'Username Not Found', 'Username not registered', $user);
         }
-        $pwsql = "SELECT user_password FROM user WHERE user_password = {$password}";
+        $pwsql = "SELECT user_password FROM user WHERE user_password = '{$password}'";
         $pwsql = $db->query($pwsql)->getFirstRow('array');
         if (!$pwsql) {
             $user = null;
@@ -55,7 +55,7 @@ class Login extends AuthController
         $token .= $password;
 
         $token = base64_encode($token);
-
+        
         // find expired token + 1 hour
         $date = date("Y-m-d H:i:s");
         $currentDate = strtotime($date);

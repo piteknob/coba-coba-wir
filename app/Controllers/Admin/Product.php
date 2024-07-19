@@ -40,10 +40,7 @@ class Product extends AuthController
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Detail Data', $data);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> 53d3be09a120a3d762591ddd6e901c780e799a3b
+    
     public function insert()
     {
         // Authorization Token
