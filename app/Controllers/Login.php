@@ -7,13 +7,11 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class Login extends AuthController
 {
-    protected $db;
-
     public function login()
     {
         $post = $this->request->getPost();
         $db = db_connect();
-        
+
         $rules = [
             'username' => 'required',
             'password' => 'required',
@@ -33,13 +31,18 @@ class Login extends AuthController
         $user = $db->query($user)->getFirstRow('array');
 
         if (!$user) {
-            return $this->responseFail(ResponseInterface::HTTP_NOT_FOUND, 'Username Not Found', 'Username not registered', $user);
+            $user = [
+                'data' => 'Username not registered'
+            ];
+            return $this->responseFail(ResponseInterface::HTTP_PRECONDITION_FAILED, 'Username Not Found', 'Username not registered', $user);
         }
         $pwsql = "SELECT user_password FROM user WHERE user_password = '{$password}'";
         $pwsql = $db->query($pwsql)->getFirstRow('array');
         if (!$pwsql) {
-            $user = null;
-            return $this->responseFail(ResponseInterface::HTTP_NOT_FOUND, 'Password Not Match', 'Wrong Password', $user);
+            $user = [
+                'data' => 'Password not match'
+            ];
+            return $this->responseFail(ResponseInterface::HTTP_PRECONDITION_FAILED, 'Password Not Match', 'Wrong Password', $user);
         }
 
         $payload = [
@@ -55,11 +58,11 @@ class Login extends AuthController
         $token .= $password;
 
         $token = base64_encode($token);
-        
+
         // find expired token + 1 hour
         $date = date("Y-m-d H:i:s");
         $currentDate = strtotime($date);
-        $futureDate = $currentDate + (60 * 60); 
+        $futureDate = $currentDate + (60 * 60);
         $formatDate = date("Y-m-d H:i:s", $futureDate);
 
 
@@ -81,7 +84,38 @@ class Login extends AuthController
                     auth_user_date_expired = '{$formatDate}' 
                     WHERE auth_user_user_id = '{$idUser}'";
             $db->query($updateAuth);
-            return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Login Success', $token);
+
+            //get ID
+            foreach ($id as $key => $value) {
+                $id = $value['auth_user_user_id'];
+            }
+
+            // generate detail user
+            $query['data'] = ['user'];
+            $query['select'] = [
+                '`user`.user_id' => 'user_id',
+                '`user`.user_username' => 'username',
+                '`user`.user_created_at' => 'created_at',
+                '`user`.user_updated_at' => 'updated_at',
+                'auth_user.auth_user_date_login' => 'date_login',
+                'auth_user.auth_user_date_expired' => 'date_expired'
+            ];
+            $query['where_detail'] = [
+                "WHERE user_id = $id"
+            ];
+            $query['join'] = [
+                'auth_user' => 'user.user_id = auth_user.auth_user_user_id' 
+            ];
+
+            $data = generateDetailData($this->request->getGet(), $query, $this->db);
+            foreach ($data as $key => $value) {
+                $data = $value[0];
+            }
+            $response = [
+                'data' => $data,
+                'token' => $token
+            ];
+            return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Login Success', $response);
         }
     }
 }

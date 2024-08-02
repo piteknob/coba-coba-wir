@@ -1,0 +1,443 @@
+CRITICAL - 2024-07-26 03:49:41 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/stock/list-stock]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\Stock.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-26 03:49:50 --> mysqli_sql_exception: Table 'test.product_stock' doesn't exist in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(277): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Stock.php(37): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-07-26 03:49:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.product_stock' doesn't exist
+[Method: GET, Route: admin/stock/list-stock]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(277): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 2 APPPATH\Controllers\Admin\Stock.php(37): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:49:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.product_stock' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 3 APPPATH\Helpers\query_helper.php(277): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 4 APPPATH\Controllers\Admin\Stock.php(37): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:49:50 --> [Caused by] mysqli_sql_exception: Table 'test.product_stock' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 4 APPPATH\Helpers\query_helper.php(277): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 5 APPPATH\Controllers\Admin\Stock.php(37): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-26 03:49:51 --> mysqli_sql_exception: Table 'test.product_stock' doesn't exist in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(277): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Stock.php(37): generateListData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-07-26 03:49:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.product_stock' doesn't exist
+[Method: GET, Route: admin/stock/list-stock]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(277): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 2 APPPATH\Controllers\Admin\Stock.php(37): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:49:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'test.product_stock' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 3 APPPATH\Helpers\query_helper.php(277): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 4 APPPATH\Controllers\Admin\Stock.php(37): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:49:51 --> [Caused by] mysqli_sql_exception: Table 'test.product_stock' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 4 APPPATH\Helpers\query_helper.php(277): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product_stock`')
+ 5 APPPATH\Controllers\Admin\Stock.php(37): generateListData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->list_stock()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-26 03:50:42 --> mysqli_sql_exception: Unknown column 'user.user_created_at' in 'field list' in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT `user`.u...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user`.u...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user`.u...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT `user`.u...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Login.php(110): generateDetailData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Login->login()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-07-26 03:50:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.user_created_at' in 'field list'
+[Method: POST, Route: login/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT `user`.user_id AS user_id, `user`.user_username AS username, `user`.user_created_at AS created_at, `user`.user_updated_at AS updated_at, auth_user.auth_user_date_login AS date_login, auth_user.auth_user_date_expired AS date_expired FROM `user` JOIN auth_user ON user.user_id = auth_user.auth_user_user_id WHERE user_id = 1')
+ 2 APPPATH\Controllers\Login.php(110): generateDetailData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->login()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:50:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.user_created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user`.user_id AS user_id, `user`.user_username AS username, `user`.user_created_at AS created_at, `user`.user_updated_at AS updated_at, auth_user.auth_user_date_login AS date_login, auth_user.auth_user_date_expired AS date_expired FROM `user` JOIN auth_user ON user.user_id = auth_user.auth_user_user_id WHERE user_id = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user`.user_id AS user_id, `user`.user_username AS username, `user`.user_created_at AS created_at, `user`.user_updated_at AS updated_at, auth_user.auth_user_date_login AS date_login, auth_user.auth_user_date_expired AS date_expired FROM `user` JOIN auth_user ON user.user_id = auth_user.auth_user_user_id WHERE user_id = 1')
+ 3 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT `user`.user_id AS user_id, `user`.user_username AS username, `user`.user_created_at AS created_at, `user`.user_updated_at AS updated_at, auth_user.auth_user_date_login AS date_login, auth_user.auth_user_date_expired AS date_expired FROM `user` JOIN auth_user ON user.user_id = auth_user.auth_user_user_id WHERE user_id = 1')
+ 4 APPPATH\Controllers\Login.php(110): generateDetailData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->login()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:50:42 --> [Caused by] mysqli_sql_exception: Unknown column 'user.user_created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT `user`.user_id AS user_id, `user`.user_username AS username, `user`.user_created_at AS created_at, `user`.user_updated_at AS updated_at, auth_user.auth_user_date_login AS date_login, auth_user.auth_user_date_expired AS date_expired FROM `user` JOIN auth_user ON user.user_id = auth_user.auth_user_user_id WHERE user_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user`.user_id AS user_id, `user`.user_username AS username, `user`.user_created_at AS created_at, `user`.user_updated_at AS updated_at, auth_user.auth_user_date_login AS date_login, auth_user.auth_user_date_expired AS date_expired FROM `user` JOIN auth_user ON user.user_id = auth_user.auth_user_user_id WHERE user_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user`.user_id AS user_id, `user`.user_username AS username, `user`.user_created_at AS created_at, `user`.user_updated_at AS updated_at, auth_user.auth_user_date_login AS date_login, auth_user.auth_user_date_expired AS date_expired FROM `user` JOIN auth_user ON user.user_id = auth_user.auth_user_user_id WHERE user_id = 1')
+ 4 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT `user`.user_id AS user_id, `user`.user_username AS username, `user`.user_created_at AS created_at, `user`.user_updated_at AS updated_at, auth_user.auth_user_date_login AS date_login, auth_user.auth_user_date_expired AS date_expired FROM `user` JOIN auth_user ON user.user_id = auth_user.auth_user_user_id WHERE user_id = 1')
+ 5 APPPATH\Controllers\Login.php(110): generateDetailData([], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->login()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:54:43 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: admin/product/insert]
+in APPPATH\Controllers\Admin\Product.php on line 73.
+ 1 APPPATH\Controllers\Admin\Product.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:54:45 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: admin/product/insert]
+in APPPATH\Controllers\Admin\Product.php on line 73.
+ 1 APPPATH\Controllers\Admin\Product.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:54:52 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: admin/product/insert]
+in APPPATH\Controllers\Admin\Product.php on line 73.
+ 1 APPPATH\Controllers\Admin\Product.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:55:19 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: admin/product/insert]
+in APPPATH\Controllers\Admin\Product.php on line 73.
+ 1 APPPATH\Controllers\Admin\Product.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:55:34 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: admin/product/insert]
+in APPPATH\Controllers\Admin\Product.php on line 73.
+ 1 APPPATH\Controllers\Admin\Product.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:56:42 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: admin/product/insert]
+in APPPATH\Controllers\Admin\Product.php on line 73.
+ 1 APPPATH\Controllers\Admin\Product.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 03:57:13 --> ErrorException: Undefined array key "name"
+[Method: POST, Route: admin/product/insert]
+in APPPATH\Controllers\Admin\Product.php on line 73.
+ 1 APPPATH\Controllers\Admin\Product.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 73)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:17:07 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, stdClass given
+[Method: POST, Route: admin/stock/reduce]
+in APPPATH\Controllers\Admin\Stock.php on line 75.
+ 1 APPPATH\Controllers\Admin\Stock.php(75): json_decode(Object(stdClass), true)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:17:09 --> TypeError: json_decode(): Argument #1 ($json) must be of type string, stdClass given
+[Method: POST, Route: admin/stock/reduce]
+in APPPATH\Controllers\Admin\Stock.php on line 75.
+ 1 APPPATH\Controllers\Admin\Stock.php(75): json_decode(Object(stdClass), true)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-26 04:20:29 --> mysqli_sql_exception: Unknown column 'product_stock_value' in 'field list' in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('UPDATE product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Stock.php(89): CodeIgniter\Database\BaseConnection->query('UPDATE product_...')
+#4 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-07-26 04:20:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_value' in 'field list'
+[Method: POST, Route: admin/stock/reduce]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Admin\Stock.php(89): CodeIgniter\Database\BaseConnection->query('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:20:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 3 APPPATH\Controllers\Admin\Stock.php(89): CodeIgniter\Database\BaseConnection->query('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:20:29 --> [Caused by] mysqli_sql_exception: Unknown column 'product_stock_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 4 APPPATH\Controllers\Admin\Stock.php(89): CodeIgniter\Database\BaseConnection->query('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-26 04:20:31 --> mysqli_sql_exception: Unknown column 'product_stock_value' in 'field list' in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('UPDATE product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Stock.php(89): CodeIgniter\Database\BaseConnection->query('UPDATE product_...')
+#4 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-07-26 04:20:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_value' in 'field list'
+[Method: POST, Route: admin/stock/reduce]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Admin\Stock.php(89): CodeIgniter\Database\BaseConnection->query('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:20:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 3 APPPATH\Controllers\Admin\Stock.php(89): CodeIgniter\Database\BaseConnection->query('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 04:20:31 --> [Caused by] mysqli_sql_exception: Unknown column 'product_stock_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 4 APPPATH\Controllers\Admin\Stock.php(89): CodeIgniter\Database\BaseConnection->query('UPDATE product_stock SET product_stock_value = product_stock_value - 1 WHERE product_stock_product_id = \'1\'')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-26 07:40:41 --> mysqli_sql_exception: Unknown column 'product_stock_value' in 'field list' in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Stock.php(101): generateDetailData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-07-26 07:40:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_value' in 'field list'
+[Method: POST, Route: admin/stock/reduce]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 2 APPPATH\Controllers\Admin\Stock.php(101): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 07:40:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 3 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 4 APPPATH\Controllers\Admin\Stock.php(101): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 07:40:41 --> [Caused by] mysqli_sql_exception: Unknown column 'product_stock_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 4 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 5 APPPATH\Controllers\Admin\Stock.php(101): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-26 07:42:19 --> mysqli_sql_exception: Unknown column 'product_stock_value' in 'field list' in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Stock.php(98): generateDetailData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-07-26 07:42:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_value' in 'field list'
+[Method: POST, Route: admin/stock/reduce]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 2 APPPATH\Controllers\Admin\Stock.php(98): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 07:42:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 3 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 4 APPPATH\Controllers\Admin\Stock.php(98): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-26 07:42:19 --> [Caused by] mysqli_sql_exception: Unknown column 'product_stock_value' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 4 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_product_name AS product, product_stock_value AS value FROM `product_stock`  WHERE product_stock_product_id = \'1\'')
+ 5 APPPATH\Controllers\Admin\Stock.php(98): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Stock->reduce()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Stock))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -12,21 +12,23 @@ class ListPublic extends AuthController
         $query['data'] = ['product'];
         $query['select'] = [
             'product_id' => 'id',
-            'product_name' => 'product',
-            'product_value_value' => 'value',
-            'product_type_name' => 'type',
-            'product_category_name' => 'category',
+            'product_name' => 'name',
+            'product_value_value' => 'value_value',
+            'product_type_name' => 'type_name',
+            'product_category_name' => 'category_name',
             'product_price' => 'price',
+            'product_stock.product_stock_stock' => 'stock'
+        ];
+        $query['join'] = [
+            'product_stock' => 'product.product_id = product_stock.product_stock_product_id'
         ];
         $query['pagination'] = [
             'pagination' => true
         ];  
-
         $query['search_data'] = [
-            'product_category_name',
             'product_name',
+            'product_category_name'
         ];
-
         $query['filter'] = [
             "product_category_name",
             "product_value_value",

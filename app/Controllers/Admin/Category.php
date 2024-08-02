@@ -7,8 +7,58 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class Category extends AuthController
 {
+    public function list()
+    {
+        // Authorization Token
+        $token = $this->before(getallheaders());
+        if (!empty($token)) {
+            return $token;
+        }
 
-    
+        $query['data'] = ['category'];
+        $query['select'] = [
+            'category_id' => 'id',
+            'category_name' => 'name',
+            'category_created_at' => 'created_at',
+            'category_updated_at' => 'updated_at',
+            'category_deleted_at' => 'deleted_at',
+        ];
+        $data = generateListData($this->request->getVar(), $query, $this->db);
+
+        return $this->responseSuccess(ResponseInterface::HTTP_OK, 'List Category', $data);
+    }
+
+    public function detail()
+    {
+        // Authorization Token
+        $token = $this->before(getallheaders());
+        if (!empty($token)) {
+            return $token;
+        }
+
+        $id = $this->request->getGet();
+        $id = $id['id'];
+        $query['data'] = ['category'];
+        $query['select'] = [
+            'category_id' => 'id',
+            'category_name' => 'name',
+            'category_created_at' => 'created_at',
+            'category_updated_at' => 'updated_at',
+        ];
+        $query['where_detail'] = [
+            "WHERE category_id = $id"
+        ];
+
+        $data = generateDetailData($this->request->getGet(), $query, $this->db);
+        foreach ($data as $key => $value) {
+            $data = $value[0];
+        }
+        $response = [
+            'data' => $data
+        ];
+        return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Detail Category', $response);
+    }
+
     public function insert()
     {
 
@@ -70,9 +120,9 @@ class Category extends AuthController
 
         $query['data'] = ['category'];
         $query['select'] = [
-           'category_name' => 'category',
-           'category_created_at' => 'created',
-           'category_updated_at' => 'updated',
+            'category_name' => 'category',
+            'category_created_at' => 'created',
+            'category_updated_at' => 'updated',
         ];
         $query['where_detail'] = [
             "WHERE category_id = {$id}"
@@ -81,14 +131,13 @@ class Category extends AuthController
         $data = generateDetailData($this->request->getVar(), $query, $this->db);
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Data Successfully Updated', $data);
-
     }
 
     public function soft_delete()
     {
         // Authorization Token
         $token = $this->before(getallheaders());
-        if (!empty($token)){
+        if (!empty($token)) {
             return $token;
         }
 
@@ -120,8 +169,8 @@ class Category extends AuthController
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Data Successfully Soft Deleted', $data);
     }
-    
-    public function DeletedCategory()
+
+    public function deleted_category()
     {
         $query['data'] = ['category'];
         $query['select'] = [
@@ -143,7 +192,7 @@ class Category extends AuthController
     {
         // Authorization Token
         $token = $this->before(getallheaders());
-        if (!empty($token)){
+        if (!empty($token)) {
             return $token;
         }
 
@@ -165,7 +214,7 @@ class Category extends AuthController
             'category_name' => 'category',
             'category_created_at' => 'created',
             'category_updated_at' => 'updated',
-        ];  
+        ];
         $query['where_detail'] = [
             "WHERE category_id = {$id}"
         ];
@@ -179,7 +228,7 @@ class Category extends AuthController
     {
         // Authorization Token
         $token = $this->before(getallheaders());
-        if (!empty($token)){
+        if (!empty($token)) {
             return $token;
         }
 

@@ -7,11 +7,65 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class Value extends AuthController
 {
+    public function list()
+    {
+        // Authorization Token
+        $token = $this->before(getallheaders());
+        if (!empty($token)) {
+            return $token;
+        }
+
+        $query['data'] = ['value'];
+        $query['select'] = [
+            'value_id' => 'id',
+            'value_value' => 'value',
+            'value_created_at' => 'created_at',
+            'value_updated_at' => 'updated_at',
+            'value_deleted_at' => 'deleted_at',
+        ];
+
+        $data = generateListData($this->request->getVar(), $query, $this->db);
+        return $this->responseSuccess(ResponseInterface::HTTP_OK, 'List Value', $data);
+    }
+    public function detail()
+    {
+        // Authorization Token
+        $token = $this->before(getallheaders());
+        if (!empty($token)) {
+            return $token;
+        }
+
+        $id = $this->request->getGet();
+        $id = $id['id'];
+
+        $query['data'] = ['value'];
+        $query['select'] = [
+            'value_id' => 'id',
+            'value_value' => 'value',
+            'value_created_at' => 'created_at',
+            'value_updated_at' => 'updated_at'
+        ];
+        $query['where_detail'] = [
+            "WHERE value_id = $id"
+        ];
+
+        $data = generateDetailData($this->request->getGet(), $query, $this->db);
+
+        foreach ($data as $key => $value) {
+            $data = $value[0];
+        }
+        $response = [
+            'data' => $data
+        ];
+
+        return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Detail Type', $response);
+    }
+
     public function insert()
     {
         // Authorization Token
         $token = $this->before(getallheaders());
-        if (!empty($token)){
+        if (!empty($token)) {
             return $token;
         }
 
@@ -24,8 +78,8 @@ class Value extends AuthController
         $this->db->query($sql);
 
         // Get Inserted Id
-        $id = $this->db->insertID(); 
-        
+        $id = $this->db->insertID();
+
         $query['data'] = ['value'];
 
         $query['select'] = [
@@ -40,14 +94,13 @@ class Value extends AuthController
         $data = generateDetailData($this->request->getPost(), $query, $this->db);
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Data Successfully Added', $data);
-
     }
 
     public function update()
     {
         // Authorization Token
         $token = $this->before(getallheaders());
-        if (!empty($token)){
+        if (!empty($token)) {
             return $token;
         }
 
@@ -67,9 +120,9 @@ class Value extends AuthController
 
         $query['data'] = ['value'];
         $query['select'] = [
-           'value_value' => 'value',
-           'value_created_at' => 'created',
-           'value_updated_at' => 'updated',
+            'value_value' => 'value',
+            'value_created_at' => 'created',
+            'value_updated_at' => 'updated',
         ];
         $query['where_detail'] = [
             "WHERE value_id = {$id}"
@@ -78,14 +131,13 @@ class Value extends AuthController
         $data = generateDetailData($this->request->getVar(), $query, $this->db);
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Data Successfully Updated', $data);
-        
     }
 
     public function soft_delete()
     {
         // Authorization Token
         $token = $this->before(getallheaders());
-        if (!empty($token)){
+        if (!empty($token)) {
             return $token;
         }
 
@@ -118,7 +170,7 @@ class Value extends AuthController
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Data Successfully Soft Deleted', $data);
     }
 
-    public function DeletedValue()
+    public function deleted_value()
     {
         $query['data'] = ['value'];
         $query['select'] = [
@@ -140,7 +192,7 @@ class Value extends AuthController
     {
         // Authorization Token
         $token = $this->before(getallheaders());
-        if (!empty($token)){
+        if (!empty($token)) {
             return $token;
         }
 
@@ -162,7 +214,7 @@ class Value extends AuthController
             'value_value' => 'value',
             'value_created_at' => 'created',
             'value_updated_at' => 'updated',
-        ];  
+        ];
         $query['where_detail'] = [
             "WHERE value_id = {$id}"
         ];
@@ -170,14 +222,13 @@ class Value extends AuthController
         $data = generateDetailData($this->request->getGet(), $query, $this->db);
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Data Successfully Restored', $data);
-
     }
 
     public function delete()
     {
         // Authorization Token
         $token = $this->before(getallheaders());
-        if (!empty($token)){
+        if (!empty($token)) {
             return $token;
         }
 

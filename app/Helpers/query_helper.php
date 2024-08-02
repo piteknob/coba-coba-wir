@@ -44,7 +44,6 @@ if (!function_exists('generateDetailData')) {
             $sql .= whereDataDetail($whereDetailQuery);
         }
 
-
         // print_r($sql);
         // die;
 
@@ -312,7 +311,7 @@ if (!function_exists('dataFrom')) {
     {
         $query = " FROM ";
         foreach ($data as $key => $value) {
-            $query .= "{$value}, ";
+            $query .= "`{$value}`, ";
         }
         $query = rtrim($query, ', ');
         return $query;
