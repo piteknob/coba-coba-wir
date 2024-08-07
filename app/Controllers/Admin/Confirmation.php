@@ -219,9 +219,9 @@ class Confirmation extends AuthController
 
         $db->query($sql);
 
-        $sql_stock = "UPDATE sales_product SET sales_product_status = 'canceled' WHERE sales_product_order_id = '{$id}' AND (sales_product_status = 'pending' OR sales_product_status = 'payed')";
+        $sql_product = "UPDATE sales_product SET sales_product_status = 'canceled' WHERE sales_product_order_id = '{$id}' AND (sales_product_status = 'pending' OR sales_product_status = 'payed')";
 
-        $db->query($sql_stock);
+        $db->query($sql_product);
 
         $query_order['data'] = ['sales_order'];
         $query_order['select'] = [
@@ -240,6 +240,9 @@ class Confirmation extends AuthController
         ];
 
         $data_order_canceled = generateDetailData($this->request->getPost(), $query_order, $db);
+        foreach ($data_order_canceled as $key => $value) {
+            $data_order = $value;
+        }
 
         $query_product['data'] = ['sales_product'];
         $query_product['select'] = [
@@ -256,18 +259,30 @@ class Confirmation extends AuthController
         $query_product['where_detail'] = [
             "WHERE sales_product_order_id = '{$id}' AND sales_product_status = 'canceled'"
         ];
-        $data_product_canceled = generateListData($this->request->getVar(), $query_product, $db);
+        $data_product_canceled = (array) generateListData($this->request->getVar(), $query_product, $db);
+
+        // RESTORE STOCK 
+        foreach ($data_product_canceled['data'] as $key => $value) {
+            $name = $value['product_name'];
+            $category = $value['product_category'];
+            $type = $value['product_type'];
+            $box = $value['product_value'];
+            $quantity = $value['quantity'];
+
+            $sql_add_stock = "UPDATE product_stock SET product_stock_stock = product_stock_stock + {$quantity}, product_stock_stock_out = product_stock_stock_out - {$quantity} WHERE product_stock_product_name = '{$name}' AND product_stock_type_name = '{$type}' AND product_stock_category_name = '{$category}' AND product_stock_value_value = '{$box}'";
+            $this->db->query($sql_add_stock);
+        }
+
 
         $data = [
             'data' => [
-                'order' => $data_order_canceled,
+                'order' => $data_order,
                 'product' => $data_product_canceled
             ]
         ];
 
         return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Data Successfully Canceled', $data);
     }
-
 
     public function report()
     {

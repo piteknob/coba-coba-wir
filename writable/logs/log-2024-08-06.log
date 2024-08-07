@@ -1,0 +1,583 @@
+CRITICAL - 2024-08-06 01:59:22 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:18:15 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:19:40 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:19:41 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:19:41 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:20:00 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:20:01 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:20:01 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:20:43 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:20:43 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:20:43 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:49 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:49 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:50 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:50 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:50 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:50 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:51 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:51 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:51 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:23:52 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:24:03 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:24:03 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:24:29 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\Category.php(34): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:26:00 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:29:27 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:30:16 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:23 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:30 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:31 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:32 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:32 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:36 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:36 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:36 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:37 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:37 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:37 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:37 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:38 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:33:38 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:27 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:27 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:37 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:38 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:47 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:48 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:49 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:49 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:52 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:53 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:34:53 --> ErrorException: Undefined array key 0
+[Method: GET, Route: admin/category/detail]
+in APPPATH\Controllers\Admin\Category.php on line 54.
+ 1 APPPATH\Controllers\Admin\Category.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Category.php', 54)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->detail()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 04:43:58 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/category/list]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\Category.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Category->list()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Category))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 07:08:40 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: admin/product/update]
+in APPPATH\Controllers\Admin\Product.php on line 153.
+ 1 APPPATH\Controllers\Admin\Product.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 07:08:56 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: admin/product/update]
+in APPPATH\Controllers\Admin\Product.php on line 153.
+ 1 APPPATH\Controllers\Admin\Product.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 07:09:01 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: admin/product/update]
+in APPPATH\Controllers\Admin\Product.php on line 153.
+ 1 APPPATH\Controllers\Admin\Product.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 07:09:29 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: admin/product/update]
+in APPPATH\Controllers\Admin\Product.php on line 153.
+ 1 APPPATH\Controllers\Admin\Product.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 07:09:53 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: admin/product/update]
+in APPPATH\Controllers\Admin\Product.php on line 153.
+ 1 APPPATH\Controllers\Admin\Product.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -50,13 +50,8 @@ class Category extends AuthController
         ];
 
         $data = generateDetailData($this->request->getGet(), $query, $this->db);
-        foreach ($data as $key => $value) {
-            $data = $value[0];
-        }
-        $response = [
-            'data' => $data
-        ];
-        return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Detail Category', $response);
+        
+        return $this->responseSuccess(ResponseInterface::HTTP_OK, 'Detail Category', $data);
     }
 
     public function insert()

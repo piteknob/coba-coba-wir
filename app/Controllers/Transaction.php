@@ -181,7 +181,7 @@ class Transaction extends AuthController
             $product_id_stock = $value->product_id;
             $product_stock_stock = $value->product_quantity;
 
-            $reduce_stock = "UPDATE product_stock SET product_stock_stock = product_stock_stock - '{$product_stock_stock}', product_stock_stock_out = product_stock_stock_out - {$product_stock_stock} WHERE product_stock_product_id = '{$product_id_stock}'";
+            $reduce_stock = "UPDATE product_stock SET product_stock_stock = product_stock_stock - '{$product_stock_stock}', product_stock_stock_out = product_stock_stock_out + {$product_stock_stock} WHERE product_stock_product_id = '{$product_id_stock}'";
             $db->query($reduce_stock);
         }
 

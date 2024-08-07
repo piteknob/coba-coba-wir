@@ -85,8 +85,8 @@ class Product extends AuthController
 
         $product = htmlspecialchars($post['name']);
         $category = htmlspecialchars($post['category']);
-        $type = htmlspecialchars($post['type']);
-        $value = htmlspecialchars($post['value']);
+        $type = htmlspecialchars($post['variant']);
+        $value = htmlspecialchars($post['box']);
         $price = htmlspecialchars($post['price']);
         $stock = htmlspecialchars($post['stock']);
 

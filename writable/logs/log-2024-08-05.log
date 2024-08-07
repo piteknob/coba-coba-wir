@@ -1,0 +1,1184 @@
+CRITICAL - 2024-08-05 01:57:08 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(90): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 01:57:45 --> ErrorException: Undefined variable $id
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 109.
+ 1 APPPATH\Controllers\Admin\User.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 01:59:32 --> ParseError: syntax error, unexpected identifier "print_r", expecting variable or "{" or "$"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Admin\User.php on line 97.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('admin/user/list-user', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('admin/user/list-user')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('admin/user/list-user')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 01:59:36 --> ParseError: syntax error, unexpected identifier "print_r", expecting variable or "{" or "$"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Admin\User.php on line 97.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('admin/user/list-user', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('admin/user/list-user')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('admin/user/list-user')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:00 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:01 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:02 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:02 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:05 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:20 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::getallheaders()
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:21 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::getallheaders()
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:24 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::getallheaders()
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:28 --> Error: Call to undefined method CodeIgniter\HTTP\IncomingRequest::getallheaders()
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 95.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:39 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:00:42 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:01:02 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:01:06 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:01:13 --> ErrorException: Undefined array key "Token"
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 96.
+ 1 APPPATH\Controllers\Admin\User.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 96)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:03:10 --> ErrorException: Undefined variable $id
+[Method: POST, Route: admin/user/update]
+in APPPATH\Controllers\Admin\User.php on line 111.
+ 1 APPPATH\Controllers\Admin\User.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\User.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:21:11 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:21:32 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:24:38 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:24:49 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:24:53 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:40:49 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:41:10 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:41:45 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:50:49 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 261.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:55:02 --> ParseError: syntax error, unexpected variable "$data"
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 268.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('admin/confirmation/cancel', 'POST')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('admin/confirmation/cancel')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('admin/confirmation/cancel')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:55:04 --> ParseError: syntax error, unexpected variable "$data"
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 268.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('admin/confirmation/cancel', 'POST')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('admin/confirmation/cancel')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('admin/confirmation/cancel')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:55:49 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 263.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:55:50 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 263.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 02:55:50 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 263.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:07:54 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 268.
+ 1 APPPATH\Controllers\Admin\Confirmation.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Confirmation.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:07:55 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 268.
+ 1 APPPATH\Controllers\Admin\Confirmation.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Confirmation.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:07:56 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 268.
+ 1 APPPATH\Controllers\Admin\Confirmation.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Confirmation.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:07:57 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 268.
+ 1 APPPATH\Controllers\Admin\Confirmation.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Confirmation.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:08:05 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 268.
+ 1 APPPATH\Controllers\Admin\Confirmation.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Confirmation.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:08:11 --> ErrorException: Undefined array key "id"
+[Method: POST, Route: admin/confirmation/cancel]
+in APPPATH\Controllers\Admin\Confirmation.php on line 268.
+ 1 APPPATH\Controllers\Admin\Confirmation.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Confirmation.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Confirmation->cancel()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Confirmation))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:31:46 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\Selected.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:35:11 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 19.
+ 1 APPPATH\Controllers\Admin\Selected.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:35:18 --> mysqli_sql_exception: Unknown column 'product_stock_id' in 'field list' in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(39): generateDetailData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-05 03:35:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_id' in 'field list'
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 2 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:35:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 3 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 4 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:35:18 --> [Caused by] mysqli_sql_exception: Unknown column 'product_stock_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 4 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 5 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:35:20 --> mysqli_sql_exception: Unknown column 'product_stock_id' in 'field list' in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(39): generateDetailData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-05 03:35:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_id' in 'field list'
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 2 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:35:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_stock_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 3 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 4 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:35:20 --> [Caused by] mysqli_sql_exception: Unknown column 'product_stock_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 4 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_stock_id AS id, product_stock_product_id AS product_id, product_stock_product_name AS product_name, product_stock_type_id AS type_id, product_stock_type_name AS type_name, product_stock_category_id AS category_id, product_stock_category_name AS category_name, product_stock_value_id AS value_id, product_stock_value_value AS value_value, product_stock_stock AS stock, product_stock_stock_in AS stock_in, product_stock_stock_out AS stock_out FROM `product` WHERE product_id = 1')
+ 5 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:37:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1 in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-08-05 03:37:56 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 3 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:56 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM category WHERE category_id NOT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 4 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:37:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1 in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-08-05 03:37:57 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 3 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:57 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM category WHERE category_id NOT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 4 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:37:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1 in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-08-05 03:37:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 3 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:58 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM category WHERE category_id NOT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 4 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:37:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1 in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-08-05 03:37:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 3 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:58 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM category WHERE category_id NOT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 4 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:37:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1 in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-08-05 03:37:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 3 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:58 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM category WHERE category_id NOT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 4 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:37:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1 in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2024-08-05 03:37:59 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 3 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:37:59 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT * FROM category WHERE category_id NOT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM category WHERE category_id NOT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM category WHERE category_id NOT 1')
+ 4 APPPATH\Controllers\Admin\Selected.php(42): CodeIgniter\Database\BaseConnection->query('SELECT * FROM category WHERE category_id NOT 1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:39:03 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: admin/product/update]
+in APPPATH\Controllers\Admin\Product.php on line 153.
+ 1 APPPATH\Controllers\Admin\Product.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:39:49 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 53.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('admin/selected/category-selected', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('admin/selected/category-selected')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('admin/selected/category-selected')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:39:51 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 53.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('admin/selected/category-selected', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('admin/selected/category-selected')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('admin/selected/category-selected')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:39:56 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 53.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('admin/selected/category-selected', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('admin/selected/category-selected')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('admin/selected/category-selected')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:40:26 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: admin/product/update]
+in APPPATH\Controllers\Admin\Product.php on line 153.
+ 1 APPPATH\Controllers\Admin\Product.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:41:01 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 46.
+ 1 APPPATH\Controllers\Admin\Selected.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:41:02 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 46.
+ 1 APPPATH\Controllers\Admin\Selected.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:41:05 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 46.
+ 1 APPPATH\Controllers\Admin\Selected.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:41:06 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 46.
+ 1 APPPATH\Controllers\Admin\Selected.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:41:07 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 46.
+ 1 APPPATH\Controllers\Admin\Selected.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:41:30 --> ErrorException: Undefined array key "product"
+[Method: POST, Route: admin/product/update]
+in APPPATH\Controllers\Admin\Product.php on line 153.
+ 1 APPPATH\Controllers\Admin\Product.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Product.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Product->update()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:50:10 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\Selected.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:50:47 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\Selected.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:51:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?pagination=false' at line 1 in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(39): generateDetailData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-05 03:51:13 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?pagination=false' at line 1
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 2 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:51:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?pagination=false' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 3 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 4 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:51:13 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?pagination=false' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 4 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 5 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-05 03:51:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?pagination=false' at line 1 in C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\wamp64\www\coba-coba-wir\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_...', 0)
+#1 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\wamp64\www\coba-coba-wir\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\wamp64\www\coba-coba-wir\app\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\wamp64\www\coba-coba-wir\app\Controllers\Admin\Selected.php(39): generateDetailData(Array, Array, Object(CodeIgniter\Database\MySQLi\Connection))
+#5 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+#6 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+#7 C:\wamp64\www\coba-coba-wir\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\coba-coba-wir\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\coba-coba-wir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\coba-coba-wir\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2024-08-05 03:51:24 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?pagination=false' at line 1
+[Method: GET, Route: admin/selected/category-selected]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 2 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:51:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?pagination=false' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 3 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 4 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:51:24 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?pagination=false' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 4 APPPATH\Helpers\query_helper.php(50): CodeIgniter\Database\BaseConnection->query('SELECT product_id AS id, product_name AS name, product_price AS price, product_type_id AS type_id, product_type_name AS type_name, product_category_id AS category_id, product_category_name AS category_name, product_value_id AS value_id, product_value_value AS value_value, product_created_at AS created_at, product_updated_at AS updated_at FROM `product` WHERE product_id = 33?pagination=false')
+ 5 APPPATH\Controllers\Admin\Selected.php(39): generateDetailData([...], [...], Object(CodeIgniter\Database\MySQLi\Connection))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->category_selected()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:54:13 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\Selected.php(66): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:58:35 --> ErrorException: Undefined array key "category_id"
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 102.
+ 1 APPPATH\Controllers\Admin\Selected.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:58:38 --> ErrorException: Undefined array key "category_id"
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 102.
+ 1 APPPATH\Controllers\Admin\Selected.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:58:40 --> ErrorException: Undefined array key "category_id"
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 102.
+ 1 APPPATH\Controllers\Admin\Selected.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:59:25 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 97.
+ 1 APPPATH\Controllers\Admin\Selected.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:59:28 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 97.
+ 1 APPPATH\Controllers\Admin\Selected.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:59:39 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 97.
+ 1 APPPATH\Controllers\Admin\Selected.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:59:40 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 97.
+ 1 APPPATH\Controllers\Admin\Selected.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 03:59:41 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/selected/type-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 97.
+ 1 APPPATH\Controllers\Admin\Selected.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Admin\\Selected.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->type_selected()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 04:00:53 --> ParseError: syntax error, unexpected variable "$query_type"
+[Method: GET, Route: admin/selected/category-selected]
+in APPPATH\Controllers\Admin\Selected.php on line 100.
+ 1 SYSTEMPATH\Router\Router.php(562): CodeIgniter\Router\AutoRouter->getRoute('admin/selected/category-selected', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(227): CodeIgniter\Router\Router->autoRoute('admin/selected/category-selected')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('admin/selected/category-selected')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 04:06:00 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/selected/value-selected]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\Selected.php(118): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\Selected->value_selected()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Selected))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 04:48:06 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 06:18:43 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 06:18:58 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-05 06:19:02 --> ErrorException: Undefined array key "Token"
+[Method: GET, Route: admin/user/list-user]
+in APPPATH\Controllers\Core\AuthController.php on line 26.
+ 1 APPPATH\Controllers\Core\AuthController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Token"', 'C:\\wamp64\\www\\coba-coba-wir\\app\\Controllers\\Core\\AuthController.php', 26)
+ 2 APPPATH\Controllers\Admin\User.php(13): App\Controllers\Core\AuthController->before([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\User->list_user()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\User))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
